@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vacation suggester</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <h1>Time to leave for vacation!</h1>
+      <p>Would you like vacation, but don't know where to go ?</p>
+      <img src="img/timetovacation.jpg"></img>
+      <p>Let me help you with finding right place for your vacation based on your preferences.</p>
+      <p>Please find and choose your answers below.</p>
+      <form id="vacation">
+         <label for="name">Name</label>
+         <input id="name" type="text">
+
+          <label for="age">Age</label>
+          <input id="age" type="text">
+
+          <div class="form-group">
+          <label for="time">When are you planning to go?</label>
+          <input id="time" class="form-contronl" type="date">
+         </div>
+
+           <div class="alone">
+           <label for="solo">What do you focus on when you go for vacation?
+           <select id="solo">
+             <option value=" "></option>
+             <option value="relax">relax and taking a rest</option>
+             <option value="amusement">amusement and excitement by sightseeing</option>
+             <option value="foodie">shopping and food</option>
+           </select>
+          </label>
+          </div>
+
+
+           <div class="radio" id="beach">
+             <p>You are a beach type. There are several perfect options for you.
+             <label>
+             <input type="radio" name="operator" value="hawaii" checked>
+             Hawaii
+             <img src="img/hawaii.jpg"></img>
+             </label>
+             <label>
+             <input type="radio" name="operator" value="guam" checked>
+             Guam
+             <img src="img/guam.jpg"></img>
+            </label>
+            <label>
+            <input type="radio" name="operator" value="bali" checked>
+            Bali
+            <img src="img/bali.jpg"></img>
+            </label>
+          </div>
+
+          <div class="radio" id="city">
+            <p>You are a city type. There are several perfect options for you.</p>
+            <label>
+            <input type="radio" name="operator" value="hawaii" checked>
+            New York
+            <img src="img/newyork.jpg"></img>
+            </label>
+            <label>
+            <input type="radio" name="operator" value="chicago" checked>
+            Chicago
+            <img src="img/chicago.jpg"></img>
+           </label>
+           <label>
+           <input type="radio" name="operator" value="seoul" checked>
+           Seoul
+           <img src="img/seoul.jpg"></img>
+           </label>
+         </div>
+
+        <div class="radio" id="shop">
+          <p>You are a shopper/foodie type. There are several perfect options for you.</p>
+          <label>
+          <input type="radio" name="operator" value="tokyo" checked>
+          Tokyo
+          <img src="img/tokyo.jpg"></img>
+          </label>
+          <label>
+          <input type="radio" name="operator" value="paris" checked>
+          Paris
+          <img src="img/paris.jpg"></img>
+          </label>
+          <label>
+          <input type="radio" name="operator" value="lasvegas" checked>
+          Seoul
+          <img src="img/seoul.jpg"></img>
+          </label>
+       </div>
+
+        <button type="submit" class="btn">Go!</button>
+        <div id="output">
+          <p><span class="name"></span>,<span class="age"></span> is going to <span class="destination"></span> on <span class="time"></span>.</p>
+        </div>
+    </form>
+    </div>
+  </body>
+</html>

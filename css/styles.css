@@ -1,0 +1,20 @@
+
+#city {
+  display: none;
+}
+
+#beach {
+  display: none;
+}
+#shop {
+  display: none;
+}
+
+#output {
+  display: none;
+}
+
+
+.radio img {
+  width: 30%;
+}
